@@ -1,15 +1,9 @@
 import { Text, View } from "react-native";
 import { Link } from "expo-router";
 
-export default function Index() {
+export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <View className="flex-1 items-center justify-center">
       <Text>Hello</Text>
       <Link href="/profile" style={{ color: "blue" }}>
         Go to Profile
