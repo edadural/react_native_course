@@ -1,61 +1,33 @@
-import {
-  View,
-  Text,
-  FlatList,
-  Image,
-  RefreshControl,
-  Alert,
-} from "react-native";
-import React, { useEffect, useState } from "react";
+import { View, Text, FlatList, Image, RefreshControl } from "react-native";
+import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { images } from "../../constants";
 import SearchInput from "../../components/SearchInput";
 import Trending from "../../components/Trending";
 import EmptyState from "../../components/EmptyState";
-import { getAllPosts } from "../../lib/appwrite";
+import { getAllPosts, getLatesPosts } from "../../lib/appwrite";
+import useAppwrite from "../../lib/useAppwrite";
+import VideoCard from "../../components/VideoCard";
 
 const Home = () => {
-  const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState([]);
+  const { data: posts, refetch } = useAppwrite(getAllPosts);
+  const { data: latestPosts } = useAppwrite(getLatesPosts);
+
   const [refreshing, setRefreshing] = useState(true);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      setIsLoading(true);
-
-      try {
-        const res = await getAllPosts();
-        setData(res);
-      } catch (error) {
-        Alert.alert("Error", error.message);
-        console.log(error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  console.log(data);
-
-  const onRefresh = () => {
+  const onRefresh = async () => {
     setRefreshing(true);
-
+    await refetch();
     setRefreshing(false);
   };
 
   return (
     <SafeAreaView className="bg-primary h-full">
       <FlatList
-        data={[{ id: 1 }, { id: 2 }, { id: 3 }]}
-        keyExtractor={(item) => item.id}
+        data={posts}
+        keyExtractor={(item) => item.$id}
         renderItem={({ item }) => {
-          return (
-            <View>
-              <Text className="text-2xl text-white">{item.id}</Text>
-            </View>
-          );
+          return <VideoCard video={item} />;
         }}
         ListHeaderComponent={() => {
           return (
@@ -86,7 +58,7 @@ const Home = () => {
                   Latest Videos
                 </Text>
 
-                <Trending posts={[{ id: 1 }, { id: 2 }, { id: 3 }]} />
+                <Trending posts={latestPosts ?? []} />
               </View>
             </View>
           );
