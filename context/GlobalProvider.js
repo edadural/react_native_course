@@ -14,11 +14,12 @@ export const GlobalProvider = ({ children }) => {
     getCurrentUser()
       .then((user) => {
         if (user) {
-          setUser(user);
           setIsLoggedIn(true);
+          setUser(user);
+        } else {
+          setIsLoading(false);
+          setUser(null);
         }
-        setIsLoading(false);
-        setUser(null);
       })
       .catch((error) => {
         console.log(error);
