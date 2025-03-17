@@ -69,7 +69,7 @@ For more details or to contribute, visit the following links:
 
 If you like the project, consider giving it a ⭐! Happy coding! 🚀
 
-<img src="https://github.com/edadural/react_native_course/tree/main/assets/img/1.png" alt="img" width="200"/>
+<img src="https://github.com/edadural/react_native_course/tree/main/assets/img/1.png" alt="img" />
 <img src="https://github.com/edadural/react_native_course/tree/main/assets/img/2.png" alt="img" width="200"/>
 <img src="https://github.com/edadural/react_native_course/tree/main/assets/img/3.png" alt="img" width="200"/>
 <img src="https://github.com/edadural/react_native_course/tree/main/assets/img/4.png" alt="img" width="200"/>
