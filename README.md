@@ -69,9 +69,15 @@ For more details or to contribute, visit the following links:
 
 If you like the project, consider giving it a ⭐! Happy coding! 🚀
 
-<img src="https://github.com/edadural/react_native_course/tree/main/assets/img/1.png" alt="img" />
-<img src="https://github.com/edadural/react_native_course/tree/main/assets/img/2.png" alt="img" width="200"/>
-<img src="https://github.com/edadural/react_native_course/tree/main/assets/img/3.png" alt="img" width="200"/>
-<img src="https://github.com/edadural/react_native_course/tree/main/assets/img/4.png" alt="img" width="200"/>
-<img src="https://github.com/edadural/react_native_course/tree/main/assets/img/5.png" alt="img" width="200"/>
-<img src="https://github.com/edadural/react_native_course/tree/main/assets/img/6.png" alt="img" width="200"/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/edadural/react_native_course/main/assets/img/1.png" alt="Image 1" width="200"/>
+  <img src="https://raw.githubusercontent.com/edadural/react_native_course/main/assets/img/2.png" alt="Image 2" width="200"/>
+  <img src="https://raw.githubusercontent.com/edadural/react_native_course/main/assets/img/3.png" alt="Image 3" width="200"/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/edadural/react_native_course/main/assets/img/4.png" alt="Image 4" width="200"/>
+  <img src="https://raw.githubusercontent.com/edadural/react_native_course/main/assets/img/5.png" alt="Image 5" width="200"/>
+  <img src="https://raw.githubusercontent.com/edadural/react_native_course/main/assets/img/6.png" alt="Image 6" width="200"/>
+</p>
+
