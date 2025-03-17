@@ -1,50 +1,77 @@
-# Welcome to your Expo app 👋
+# Aora
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aora is a mobile application that allows users to share, explore, and interact with videos. Built with React Native and Appwrite, it offers a modern design and a smooth user experience.
 
-## Get started
+## ✨ Features
 
-1. Install dependencies
+- **User Registration and Login**: Secure authentication system powered by Appwrite.
+- **Home Feed**: A dynamic feed displaying the latest and most popular videos.
+- **Video Uploading**: Users can upload their own videos and share them with the community.
+- **Search and Filtering**: Advanced search functionality to find videos easily.
+- **Profile Page**: Users can view their uploaded videos.
+- **Animations and Smooth Transitions**: Modern and dynamic animations using NativeWind and Animatable libraries.
 
-   ```bash
-   npm install
-   ```
+## 💪 Tech Stack
 
-2. Start the app
+**Frontend:**
 
-   ```bash
-    npx expo start
-   ```
+- React Native
+- Expo
+- NativeWind (TailwindCSS)
+- Animatable
 
-In the output, you'll find options to open the app in a
+**Backend:**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Appwrite
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🎨 Setup
 
-## Get a fresh project
+Follow these steps to run the project locally.
 
-When you're ready, run:
+### 1. Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/en)
+- [Git](https://git-scm.com/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+
+### 2. Clone the Repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/edadural/react_native_course
+cd react_native_course
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 3. Install Dependencies
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 4. Run the Project
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+### 5. Run with Expo Go
 
-Join our community of developers creating universal apps.
+- Install the Expo Go app on your mobile device.
+- Scan the QR code displayed in the terminal to start the app.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🔗 More Information
+
+For more details or to contribute, visit the following links:
+
+- **[YouTube Tutorial](https://www.youtube.com/watch?v=ZBCUegTZF7M)**
+- **[Project Repository](https://github.com/adrianhajdin/aora)**
+
+If you like the project, consider giving it a ⭐! Happy coding! 🚀
+
+<img src="https://github.com/edadural/react_native_course/tree/main/assets/img/1.png" alt="img" width="200"/>
+<img src="https://github.com/edadural/react_native_course/tree/main/assets/img/2.png" alt="img" width="200"/>
+<img src="https://github.com/edadural/react_native_course/tree/main/assets/img/3.png" alt="img" width="200"/>
+<img src="https://github.com/edadural/react_native_course/tree/main/assets/img/4.png" alt="img" width="200"/>
+<img src="https://github.com/edadural/react_native_course/tree/main/assets/img/5.png" alt="img" width="200"/>
+<img src="https://github.com/edadural/react_native_course/tree/main/assets/img/6.png" alt="img" width="200"/>
